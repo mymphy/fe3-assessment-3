@@ -1,0 +1,85 @@
+/*------------------------------------------------------
+    General
+------------------------------------------------------*/
+body{
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  }
+h1{
+    color: darkred;
+    text-align: center;
+}
+p{
+    font-size: 10pt;
+    margin-left:20px;
+}
+
+/*------------------------------------------------------
+    SVG
+------------------------------------------------------*/
+svg{
+    display: block;
+    margin: auto;
+}
+svg#map {
+    border: solid darkred;
+}
+.background {
+    fill: none;
+    pointer-events: all;
+}
+.countries{
+    cursor: pointer;
+    stroke: #fff;
+}
+.legend, 
+.legend_title text{
+    font-size:10pt;
+}
+.barlabel {
+    font-size:8pt;
+    text-anchor: middle;
+}
+section#js-legend{
+    position: absolute;
+    top: 69vh;
+    left: 10.5vw;
+}
+
+/*------------------------------------------------------
+    Input range
+    http://www.cssportal.com/style-input-range/
+------------------------------------------------------*/
+input#year {
+    position: absolute;
+    left: 12vw;
+    top: 60vh;
+  }
+input[type=range] {
+    height: 32px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 17%;
+  }
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #B6B6B6;
+    border-radius: 25px;
+    border: 1px solid #8A8A8A;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 24px;
+    width: 35px;
+    border-radius: 6px;
+    background: #DADADA;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
