@@ -298,7 +298,7 @@ With this code I got the following on my console.log:
 * [Using HTML inputs with d3.js](http://www.d3noob.org/2014/04/using-html-inputs-with-d3js.html)
 * [Pair some data to the original data by Laurens](https://github.com/Razpudding/fed3-d3events/blob/master/index.js)
 * [Map of the Netherlands](http://bl.ocks.org/phil-pedruco/9344373)
-* [topoJson The Netherlands(https://github.com/deldersveld/topojson/blob/master/countries/netherlands/nl-gemeentegrenzen-2016.json)
+* [topoJson The Netherlands](https://github.com/deldersveld/topojson/blob/master/countries/netherlands/nl-gemeentegrenzen-2016.json)
 
 ## License
 [GNU v.3](https://opensource.org/licenses/GPL-3.0) © Luisa Braga dos Santos
