@@ -270,7 +270,24 @@ With this code I got the following on my console.log:
         .call( zoom.transform, d3.zoomIdentity );
     }
     ```
-
+* Added a transition on the hover effect from the legend.
+  I chose the transition by this [link](https://bl.ocks.org/d3noob/1ea51d03775b9650e8dfd03474e202fe)
+  ```
+  d3.selectAll("svg#map path:not([fill = '"+ d3.rgb(color_key) +"'])")
+        .transition()
+        .ease(d3.easeCubic)    
+        .delay(250)
+        .attr("fill", colorMap);
+  }
+  ```
+  ```
+  d3.selectAll("svg#map path")
+        .transition()
+        .ease(d3.easeCubic)    
+        .delay(300)
+        .call(fillMap, color, data);
+  }
+  ```
 ## Todo
 
 ### Pie chart
@@ -297,6 +314,7 @@ With this code I got the following on my console.log:
 * [TopoJSON Collection](https://github.com/deldersveld/topojson#netherlands)
 * [Using HTML inputs with d3.js](http://www.d3noob.org/2014/04/using-html-inputs-with-d3js.html)
 * [Pair some data to the original data by Laurens](https://github.com/Razpudding/fed3-d3events/blob/master/index.js)
+* [Transition Easing Comparison in v4](https://bl.ocks.org/d3noob/1ea51d03775b9650e8dfd03474e202fe)
 * [Map of the Netherlands](http://bl.ocks.org/phil-pedruco/9344373)
 * [topoJson The Netherlands](https://github.com/deldersveld/topojson/blob/master/countries/netherlands/nl-gemeentegrenzen-2016.json)
 
